@@ -17,18 +17,20 @@ ansible-galaxy init Docker
 Для удобства использования, роль будет параметризована с помощью переменных, таких как версия Docker, репозиторий, имя контейнера и другие настройки.
 
 # Пример переменных для роли Docker
+```
 docker_version: "20.10"
 docker_container_name: "my_docker_container"
+```
 
 4. Создание репозитория для ролей
 Создайте репозиторий на GitLab для хранения ролей. После этого запушьте роль Docker в репозиторий.
 
 ```bash
 git init
-git remote add origin <gitlab_repo_url>
+git remote add origin <github_repo_url>
 git add .
 git commit -m "Initial commit for Docker role"
-git push -u origin master
+git push -u origin main
 ```
 
 5. Создание requirements.yml
